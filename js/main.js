@@ -1057,7 +1057,7 @@ $( function() {
     const $menuUI01 = new JQUIMenu( menuTree_02 );
     $( '.menu' ).first().replaceWith( $menuUI01.getUIMenuDOMTree() );
 
-    console.clear();
+    // console.clear();
 
 } ); // eof DOMContentLoaded event handling
 
