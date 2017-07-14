@@ -170,7 +170,7 @@ oLogger.logOff();
 
                 oLogger.log( `event.type = ${event.type} class=${event.target.className} ` );
                 oLogger.log( `event.target.checked = ${event.target.checked}` );
-                console.dir( event.target );
+                // console.dir( event.target );
 
                 if( !isItDisabled ) {
                     setTimeout(
@@ -194,7 +194,7 @@ oLogger.logOff();
 
             oLogger.log( `event.type = ${event.type} class=${event.target.className} ` );
             oLogger.log( `event.target.checked = ${event.target.checked}` );
-            console.dir( event.target );
+            // console.dir( event.target );
 
             const $checkBox = $( event.currentTarget );
             // const $checkBox = $( this );
