@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="28.079683mm"
+   height="28.720068mm"
+   viewBox="0 0 99.494941 101.76402"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="checkbox--disabled-02.svg">
+  <title
+     id="title4854">checkbox-checked</title>
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5515">
+      <stop
+         style="stop-color:#949494;stop-opacity:1"
+         offset="0"
+         id="stop5517" />
+      <stop
+         style="stop-color:#4c4c4c;stop-opacity:0"
+         offset="1"
+         id="stop5519" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5515"
+       id="linearGradient5521"
+       x1="78.791901"
+       y1="233.12849"
+       x2="128.03682"
+       y2="282.87851"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="78.203879"
+     inkscape:cy="-1.1315969"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="mm">
+    <sodipodi:guide
+       position="1.010153,56.817295"
+       orientation="1,0"
+       id="guide4806" />
+    <sodipodi:guide
+       position="109.60155,101.26401"
+       orientation="0,1"
+       id="guide4808" />
+    <sodipodi:guide
+       position="83.842661,27.522877"
+       orientation="0,1"
+       id="guide4810" />
+    <sodipodi:guide
+       position="51.012702,27.522877"
+       orientation="1,0"
+       id="guide4812" />
+    <sodipodi:guide
+       position="21.213204,128.53812"
+       orientation="1,0"
+       id="guide4814" />
+    <sodipodi:guide
+       position="51.012702,70.454354"
+       orientation="0,1"
+       id="guide4816" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>checkbox-checked</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-48.992397,-201.81883)">
+    <rect
+       style="fill:url(#linearGradient5521);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-opacity:1"
+       id="rect4804"
+       width="98.994949"
+       height="100.0051"
+       x="48.992397"
+       y="202.82391" />
+    <g
+       id="g4826">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4820"
+         d="m 50.002551,202.31883 97.479719,0"
+         style="fill:none;fill-rule:evenodd;stroke:#281e46;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.17647059" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4824"
+         d="m 147.98735,202.31883 -0.75762,100.51019 -97.227179,0.25253 0,-100.76272"
+         style="fill:none;fill-rule:evenodd;stroke:#281e46;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.17647059" />
+    </g>
+  </g>
+</svg>

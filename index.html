@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- <html lang="en"> -->
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Homework - Modules 09,10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Select Box Factory definitions ... -->
+        <!-- These SBF' styles are placed before my core styles since they redefine
+            the way how our content looks.
+        -->
+
+        <link rel="stylesheet" type="text/css" href="css/select/selectboxfactory.css">
+    	<link rel="stylesheet" type="text/css" href="css/select/log.css">
+    	<link rel="stylesheet" type="text/css" href="css/select/superTables.css">
+    	<link rel="stylesheet" type="text/css" href="css/select/selectboxguide.css">
+        <!-- eof Select Box Factory definitions ... -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/reset-em.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- <script type="text/javascript" src="js/select/jquery-1.2.6.js"></script>
+    <script type="text/javascript" src="js/select/jquery-ui-personalized-1.5.2.js"></script> -->
+    <!-- take out for log and resize -->
+
+    <!-- <script type="text/javascript" src="js/select/log.js"></script>
+    <script type="text/javascript" src="js/select/selectboxfactory-2.0.js"></script>
+    <script type="text/javascript" src="js/select/superTables.js"></script> -->
+
+    <!-- Next migrate-Code is taken from
+        << a Solution is found here ... >>
+        https://github.com/jquery/jquery-migrate/tree/1.x-stable#readme
+
+        jQuery.browser
+            Returns: PlainObjectversion deprecated: 1.3, removed: 1.9
+
+            This property was removed in jQuery 1.9 and is available only through the jQuery.migrate plugin.
+            Please try to use feature detection instead.
+
+        http://api.jquery.com/jQuery.browser/
+    -->
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.4.1.js"></script>
+
+
+    <!-- https://cdnjs.com/libraries/ -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> -->
+
+    <!-- Next migrate-Code is taken from
+        Migrate older jQuery code to jQuery 3.0+
+            https://github.com/jquery/jquery-migrate/#migrate-older-jquery-code-to-jquery-30
+
+        Caution: it doesn't help for jQuery of at least 3.2.1 version
+    -->
+    <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.5/jquery.jcarousel.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.5/jquery.jcarousel.js" integrity="sha256-ne7QVT8yf2EjMBos3wYku6BiwDXyuC7J/mQeZVe5QE8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.5/jquery.jcarousel-control.js" integrity="sha256-iSlKCTqerlYF/pMkLBsQmpMrZZ3QI1/DEVrp4Nm1s8s=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.5/jquery.jcarousel-pagination.js" integrity="sha256-d5vRR1TjK6/W/+95KaQMNjsyEM9uD76OkZ+DoiVc5l4=" crossorigin="anonymous"></script>
+
+    <!-- Select Box Factory definitions ... -->
+
+    <!-- CSS filrs make changes here ... -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/select/selectboxfactory.css">
+	<link rel="stylesheet" type="text/css" href="css/select/log.css">
+	<link rel="stylesheet" type="text/css" href="css/select/superTables.css">
+	<link rel="stylesheet" type="text/css" href="css/select/selectboxguide.css"> -->
+
+    <script type="text/javascript" src="js/select/log.js"></script>
+    <script type="text/javascript" src="js/select/selectboxfactory-2.0.js"></script>
+    <script type="text/javascript" src="js/select/superTables.js"></script>
+
+
+    <!-- eof Select Box Factory definitions ... -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+
+    <script src="js/logger.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+    <div class="wrapper-main">
+
+        <header class="header-core">
+        <!-- <div class="wrapper-header"> -->
+            <div class="core-container">
+
+                <div class="wrapper-carousel">
+                    <h1 class="carousel-slogan">Streets of <span class="city-name">London</span></h1>
+                    <!-- <h1 class="carousel-slogan">Walking by streets of <span class="city-name">streets of London</span></h1> -->
+
+                    <!-- the Carousel goes here
+                        Root element
+                            List element
+                                Item element(s)
+                    -->
+                    <!-- div.jcarousel>ul>(li>img[src="img/uk-london-$$-small.jpeg"][alt="a Pic of London, $$"])*5 -->
+                    <div class="jcarousel">
+                        <!-- <ul class="jcarousel-list"> -->
+                        <!-- <ul> -->
+                        <ul class="carousel__list">
+                            <li class="carousel__item"><img src="img/uk-london-01-small.jpeg" alt="a Pic of London, 01"></li>
+                            <li class="carousel__item"><img src="img/uk-london-02-small.jpeg" alt="a Pic of London, 02"></li>
+                            <li class="carousel__item"><img src="img/uk-london-03-small.jpeg" alt="a Pic of London, 03"></li>
+                            <li class="carousel__item"><img src="img/uk-london-04-small.jpeg" alt="a Pic of London, 04"></li>
+                            <li class="carousel__item"><img src="img/uk-london-05-small.jpeg" alt="a Pic of London, 05"></li>
+                        </ul>
+                    </div>
+
+                    <!-- Controls { Left, Right } -->
+                    <a class="jcarousel-prev jcarousel-switch" href="#"> <!-- Prev--> </a>
+                    <a class="jcarousel-next jcarousel-switch" href="#"> <!-- Next--> </a>
+
+                    <!-- Pagination -->
+                    <div class="jcarousel-pagination">
+                        <!-- Pagination items will be generated in here -->
+                    </div>
+
+                </div>    <!-- eo wrapper-carousel -->
+
+                <nav class="nav-header">
+
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="item__name">Item 1</a></li>
+                        <li class="menu__item"><a href="#" class="item__name">Item 2</a></li>
+                        <li class="menu__item"><a href="#" class="item__name">Item 3</a></li>
+                        <li class="menu__item"><a href="#" class="item__name">Item 4</a></li>
+                        <li class="menu__item"><a href="#" class="item__name">Item 5</a></li>
+                    </ul>
+
+                    <!-- Site's UI settings container ... -->
+                    <div id="site-ui-sets">
+
+                        <!-- Select Box Factory definitions ... -->
+                        <!-- a simple example of the SBF's-based select widget -->
+                        <!-- <div id="dropdownContainer">
+                        	<div id="lynx" title="lynx" defaultSelection="false" state="0" data="claws,stripes"> Lynx </div>
+                        	<div id="cheetah" title="Cheetah" defaultSelection="false" state="0" data="eyes,claws">Cheetah</div>
+                        	<div id="bobcat" title="bobcat" defaultSelection="false" state="0" data="eyes,nose">Bobcat</div>
+                        </div> -->
+                        <!-- my SBF's-based select widget -->
+                        <div class="ui-menu">
+                            <h2 class="ui-menu-parameter">UI Theme ...</h2>
+                            <div id="dropdownContainerWidget">
+                            </div>
+                        </div>
+
+                        <!-- Select Box Factory definitions ... -->
+
+                        <!-- a standard SELECT-control sample -->
+                        <!-- <select class="site-theme" name="site-theme">
+                            <option value="theme-01" selected>Default theme</option>
+                            <option value="theme-02">Option 02</option>
+                            <option value="theme-03">Option 03</option>
+                        </select> -->
+
+                        <div class="ui-menu">
+                            <h2 class="ui-menu-parameter">{CSS} UI Sets ...</h2>
+                            <div class="uiset-cb__container">
+                                <input type="checkbox" id="uiset-cb-01" class="uiset-cb-input_uk">
+                                <label for="uiset-cb-01" class="uiset-cb-label_uk">Label 01</label>
+                            </div>
+                            <div class="uiset-cb__container">
+                                <input type="checkbox" id="uiset-cb-02" class="uiset-cb-input_uk">
+                                <label for="uiset-cb-02" class="uiset-cb-label_uk">Label 02</label>
+                            </div>
+                            <div class="uiset-cb__container">
+                                <input type="checkbox" id="uiset-cb-03" class="uiset-cb-input_uk">
+                                <label for="uiset-cb-03" class="uiset-cb-label_uk">Label 03</label>
+                            </div>
+                        </div>
+
+                        <div class="ui-menu js-cb-menu">
+                            <h2 class="ui-menu-parameter">{jQ} UI Sets ...</h2>
+
+                            <!-- <div class="uiset-cb__container">
+                                <label for="uiset02-cb-00" class="uiset-cb-label_uk">Label 00</label>
+                                <span class="uiset-cb-input__js-wrapper">
+                                    <input type="checkbox" id="uiset02-cb-00" class="uiset-cb-input_uk-std">
+                                </span>
+                            </div> -->
+
+                            <div class="uiset-cb__container">
+                                <label for="uiset02-cb-01" class="uiset-cb-label_uk">Label 01</label>
+                                <input type="checkbox" id="uiset02-cb-01" class="uiset-cb-input_uk-std">
+                            </div>
+                            <div class="uiset-cb__container">
+                                <label for="uiset02-cb-02" class="uiset-cb-label_uk">Label 02</label>
+                                <input type="checkbox" id="uiset02-cb-02" class="uiset-cb-input_uk-std" checked>
+                            </div>
+                            <div class="uiset-cb__container">
+                                <label for="uiset02-cb-03" class="uiset-cb-label_uk">Label 03</label>
+                                <input type="checkbox" id="uiset02-cb-03" class="uiset-cb-input_uk-std">
+                            </div>
+
+                            <!-- a disabled checkbox -->
+                            <div class="uiset-cb__container">
+                                <label for="uiset02-cb-04" class="uiset-cb-label_uk">Label 04</label>
+                                <input type="checkbox" id="uiset02-cb-04" class="uiset-cb-input_uk-std" disabled>
+                            </div>
+                            <!-- a disabled checked checkbox -->
+                            <div class="uiset-cb__container">
+                                <label for="uiset02-cb-05" class="uiset-cb-label_uk">Label 05</label>
+                                <input type="checkbox" id="uiset02-cb-05" class="uiset-cb-input_uk-std" checked disabled>
+                            </div>
+
+                        </div>    <!-- eof { ui-menu js-cb-menu } -->
+
+
+                    </div>    <!-- eo site-ui-sets -->
+
+                </nav>
+            </div>    <!-- core-container -->
+        </header>    <!-- eo Header -->
+
+
+        <main class="main-content">
+            <div class="core-container">
+                <!-- (section.city-topic>h2.section-header+(p.info{Lorem})*2)*5 -->
+                <section class="city-topic">
+                    <h2 class="section-header">London moment 01</h2>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                </section>
+                <section class="city-topic">
+                    <h2 class="section-header">London moment 02</h2>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                </section>
+                <section class="city-topic">
+                    <h2 class="section-header">London moment 03</h2>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                </section>
+                <section class="city-topic">
+                    <h2 class="section-header">London moment 04</h2>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                </section>
+                <section class="city-topic">
+                    <h2 class="section-header">London moment 05</h2>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                </section>
+
+                <section class="city-topic">
+                    <h2 class="section-header">London moment 06</h2>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                </section>
+
+                <section class="city-topic">
+                    <h2 class="section-header">London moment 07</h2>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere hic amet similique quisquam quos suscipit velit numquam reiciendis nemo illum ducimus totam fuga omnis soluta error, doloribus, sint harum.</p>
+
+            </div>
+        </main>
+
+
+    </div>    <!-- eo wrapper-main -->
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.wrapper-main {
+    box-sizing: border-box;
+
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 1rem;
+
+    width: 80%;
+    width: 960px;
+
+    /* Test */
+    /* my own mild green-colour, like asalad */
+    background-color: rgba(225, 242, 176, 0.5);
+}

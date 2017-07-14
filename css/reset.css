@@ -1,0 +1,30 @@
+/* CSSReset functionality
+  It is based on the Eric Meyer's CSSReset verson
+*/
+
+
+/* Elements go here ... */
+
+
+html, body, div, span,
+header, main, footer, nav, menu,
+h1, h2, h3, h4, h5, h6, p, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend
+{
+    margin: 0;
+ 	padding: 0;
+ 	border: 0;
+
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}

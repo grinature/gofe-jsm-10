@@ -1,0 +1,62 @@
+.logContainer{
+	position:absolute;
+	z-index:120;	
+	visibility:hidden;
+	background-color:#ffffff;
+}
+.uiLog{	
+	border: 1px solid #3B5A82;	
+	border-left:0px;
+	float:left;
+	overflow:auto;
+	font-size:11px; 
+	color:#666666;
+	font-family:arial,sans-serif;	
+}
+.controlPanel{	/* fixed width */
+	border: 1px solid #3B5A82;	
+	border-right:0px;
+	width:26px;
+	float:left;
+	background: url(logbg.gif) center;		
+	cursor:pointer;
+}
+.controlButton{
+	cursor:pointer;
+	width:22px;
+	height:19px;	
+}
+.controlButton.dimensions{
+	height:18px;	
+}
+.controlButton.dimensions.taller{
+	background: url(taller.gif) no-repeat right center;	
+}
+.controlButton.dimensions.shorter{
+	background: url(shorter.gif) no-repeat right center;	
+}
+.controlButton.hide{		
+	background: url(hide.gif) no-repeat right center;			
+}		
+.controlButton.show{		
+	background: url(show.gif) no-repeat right center;			
+}	
+.controlButton.clear{		
+	background: url(wipe.gif) no-repeat right center;		
+}
+.bottomEdge{
+	position:absolute;
+	cursor:pointer;
+	width:16px;
+	height:16px;			
+	background: url(bottomedge.gif) no-repeat right center;			
+}	
+/* optional
+.controlButton.clipboard{		
+	background: url(clipboard.gif) no-repeat right center;			
+}	
+*/		
+.log{
+	font-weight:bold;
+	color:blue;
+}				
